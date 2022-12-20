@@ -7,6 +7,10 @@ on:
   pull_request:
     branches: ['main']
 
+  defaults:
+  run:
+    working-directory: ./web
+
 jobs:
   prettier:
     runs-on: ubuntu-latest
