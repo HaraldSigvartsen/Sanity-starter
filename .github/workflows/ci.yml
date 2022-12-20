@@ -12,6 +12,7 @@ defaults:
     working-directory: ./web
 
 jobs:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
     
