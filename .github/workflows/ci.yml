@@ -12,9 +12,7 @@ defaults:
     working-directory: ./web
 
 jobs:
-  build-and-test:
     runs-on: ubuntu-latest
-
     steps:
     
       - name: Checkout
@@ -54,4 +52,4 @@ jobs:
       #      SANITY_STUDIO_API_DATASET: ${{ secrets.SANITY_STUDIO_API_DATASET }}
         run: |
           pnpm run build
-          pnpm run test
+  
