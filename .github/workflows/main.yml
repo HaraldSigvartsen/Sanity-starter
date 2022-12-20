@@ -5,6 +5,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  
+defaults:
+  run:
+    working-directory: ./web
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
