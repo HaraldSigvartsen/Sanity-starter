@@ -1,4 +1,4 @@
-import { ClientConfig } from 'next-sanity';
+import { ClientConfig } from "next-sanity";
 
 const config: ClientConfig = {
   /**
@@ -8,9 +8,9 @@ const config: ClientConfig = {
    *
    * https://nextjs.org/docs/basic-features/environment-variables
    * */
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'toolbox-v2',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "toolbox-v2",
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  apiVersion: '2022-08-24', // or today's date for latest
+  apiVersion: "2022-08-24", // or today's date for latest
   /**
    * Set useCdn to `false` if your application require the freshest possible
    * data always (potentially slightly slower and a bit more expensive).

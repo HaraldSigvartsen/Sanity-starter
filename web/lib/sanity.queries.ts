@@ -7,4 +7,4 @@ export const landingPageQuery = groq`
     slug,
     pageBuilder
 }
-`
+`;
