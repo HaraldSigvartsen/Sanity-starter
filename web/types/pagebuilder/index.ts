@@ -1,4 +1,1 @@
-export interface IPagebuilder {
-    
-  }
-  
+export interface IPagebuilder {}
