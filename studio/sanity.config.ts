@@ -6,6 +6,7 @@ import {theme} from 'https://themer.sanity.build/api/hues?preset=verdant'
 import { structure } from './deskStructure'
 import { defaultDocumentNode } from './studio-config/views'
 import {colorInput} from '@sanity/color-input'
+import {unsplashImageAsset} from 'sanity-plugin-asset-source-unsplash'
 
 export default defineConfig({
   theme,
@@ -15,7 +16,13 @@ export default defineConfig({
   projectId: 'm2i3zuya',
   dataset: 'production',
 
-  plugins: [colorInput(), deskTool({structure}), defaultDocumentNode, visionTool()],
+  plugins: [
+    colorInput(),
+    deskTool({structure}),
+    defaultDocumentNode,
+    visionTool(),
+    unsplashImageAsset(),
+  ],
 
   schema: {
     types: schemaTypes,
