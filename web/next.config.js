@@ -4,4 +4,9 @@ const nextConfig = {
   experimental: { urlImports: ["https://themer.sanity.build/"] },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  nextConfig,
+  images: {
+    domains: ["cdn.sanity.io"],
+  },
+};

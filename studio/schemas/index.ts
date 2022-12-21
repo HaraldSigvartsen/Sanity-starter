@@ -1,26 +1,26 @@
 import articles from "./documents/articles";
-import homepage from "./documents/homepage";
-import settings from "./documents/settings";
-import Body from "./objects/Body";
-import Pagebuilder from "./objects/Pagebuilder";
-import Slug from "./objects/Slug";
-import Subtitle from "./objects/Subtitle";
-import Text from "./objects/Text";
-import Title from "./objects/Title";
+import landingpage from './documents/landingpage'
+import settings from './documents/settings'
+import Body from './objects/Body'
+import heroImage from './objects/heroImage'
+import Pagebuilder from './objects/Pagebuilder'
+import Slug from './objects/Slug'
+import Subtitle from './objects/Subtitle'
+import Text from './objects/Text'
+import Title from './objects/Title'
 
 export const schemaTypes = [
-    // Documents
-    articles,
-    settings,
-    homepage,
+  // Documents
+  articles,
+  settings,
+  landingpage,
 
-    // Objects
-    Title,
-    Slug,
-    Pagebuilder,
-    Text,
-    Body,
-    Subtitle,
-
-    
+  // Objects
+  Title,
+  Slug,
+  Pagebuilder,
+  Text,
+  Body,
+  Subtitle,
+  heroImage,
 ]
