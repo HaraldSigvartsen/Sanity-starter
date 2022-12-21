@@ -30,13 +30,19 @@ export default function Home({ articles, settings, landingPage }: Props) {
       </Head>
 
       <div
+        className="h-fit w-auto"
         style={{
+          height: "auto",
           backgroundColor: settings.backgroundColor?.hex,
           color: settings.fontColor?.hex,
         }}
       >
         {/* Content */}
-        <Landingpage landingPage={landingPage} articles={articles} />
+        <Landingpage
+          settings={settings}
+          landingPage={landingPage}
+          articles={articles}
+        />
       </div>
     </>
   );

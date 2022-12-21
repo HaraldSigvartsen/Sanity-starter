@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => (
-  <div className="h-screen w-screen scrollbar-hide">
+  <div className=" scrollbar-hide">
     <Header />
     <main>{children}</main>
   </div>

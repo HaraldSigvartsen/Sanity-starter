@@ -5,7 +5,10 @@ export const landingPageQuery = groq`
     _id,
     title,
     slug,
-    pageBuilder
+    pageBuilder,
+    heroImage{
+        asset
+    }
 }
 `;
 
