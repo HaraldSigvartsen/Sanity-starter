@@ -5,6 +5,7 @@ import {schemaTypes} from './schemas'
 import {theme} from 'https://themer.sanity.build/api/hues?preset=verdant'
 import { structure } from './deskStructure'
 import { defaultDocumentNode } from './studio-config/views'
+import {colorInput} from '@sanity/color-input'
 
 export default defineConfig({
   theme,
@@ -14,11 +15,7 @@ export default defineConfig({
   projectId: 'm2i3zuya',
   dataset: 'production',
 
-  plugins: [
-    defaultDocumentNode,
-    visionTool(),
-    deskTool({ structure }),
-  ],
+  plugins: [colorInput(), deskTool({structure}), defaultDocumentNode, visionTool()],
 
   schema: {
     types: schemaTypes,

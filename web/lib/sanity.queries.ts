@@ -8,3 +8,11 @@ export const landingPageQuery = groq`
     pageBuilder
 }
 `;
+
+export const settingsQuery = groq`
+*[_type == "settings"][0]
+`;
+
+export const landingpage = groq`
+*[_type == "landingPage"][0]
+`;

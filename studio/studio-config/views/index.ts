@@ -35,11 +35,11 @@ const resolveProductionUrl = async (doc: any, context: StructureContext) => {
     const slug = await client.fetch('*[_id == $id][0].slug.current', {id: doc._id})
 
     // Build preview url
-    const url = new URL('https://ignite-toolbox.vercel.app/')
+    const url = new URL('https://sanitystarter.vercel.app/')
 
     switch (doc._type) {
-      case 'tools':
-        url.pathname = `tools/${slug}`
+      case 'articles':
+        url.pathname = `articles/${slug}`
         break
       case 'collections':
         url.pathname = `collections/${slug}`
